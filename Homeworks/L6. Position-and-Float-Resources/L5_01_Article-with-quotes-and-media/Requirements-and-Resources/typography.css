@@ -3,8 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* reset.css */
-
 html{
     font: 16px/1.5;
 }
@@ -35,10 +33,3 @@ h3{ font-size: 1.75em; }
 h4{ font-size: 1.45em; }
 h5{ font-size: 1.2em; }
 h6{ font-size: 1em; }
-
-
-/* #container::after { 
-    content: "";
-    display: block; 
-    clear: both;
-  } */

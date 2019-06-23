@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font: 16px/1.5;
+}
+body{
+    font-family: Helvetica, sans-serif;
+    background: rgb(236, 236, 236);
+    max-width: 70%;
+    margin: auto;
+}
+body, input, textarea, option, select, table, form, p{
+    font: inherit;
+}
+h1, h2, h3, h4, h5, h6{
+    line-height: 1.1;
+    padding-bottom: 0.5em;
+}
+p, ol, ul, blockquote{
+    padding-bottom: 1.5em;
+    box-sizing: inherit;
+}
+h1{ font-size: 2.5em; }
+h2{ font-size: 2em; }
+h3{ font-size: 1.75em; }
+h4{ font-size: 1.45em; }
+h5{ font-size: 1.2em; }
+h6{ font-size: 1em; }
+main{
+    border-top: 2px black solid;
+}
+.container::after { 
+    content: "";
+    display: block; 
+    clear: both;
+}
+p.site-title{
+    font-family: Helvetica, sans-serif;
+    display: inline-block;
+    font: 4em bold;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 1em 0 0.5em 0;
+}
+article>img{
+    border: 2px black solid;
+    padding: 5px;
+    background: white;
+}
+blockquote{
+    float: right;
+    width: 40%;
+    padding-left: 2rem;
+    margin: 0;
+    font-style: italic;
+    opacity: 0.8;
+    font-family: serif;
+    border-left: 1px solid gray;
+}
+blockquote>p{
+    text-align: right;
+    padding-top: 1em;
+}
+img.I1{
+    float: right;
+    margin: 0 0 1em 1em;
+}
+img.I2{
+    float: left;
+    margin: 0 1em 1em 0;
+}
+h1, h2{
+    padding:0.5em 0;
+    margin-top: 15px;
+}
