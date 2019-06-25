@@ -1,0 +1,26 @@
+div.viewport{
+    max-width: 900px;
+    height: auto;
+    position: relative;
+}
+section.card img{
+    display: block;
+    width: 30%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: inset 3px 3px 5px 1px rgba(0,0,0,0.25);
+}
+div.viewport.pic1{
+    background: linear-gradient(90deg, rgb(24, 90, 157), rgb(67, 205, 162));
+}
+div.viewport.pic2{
+    background: linear-gradient(90deg, rgb(169, 52, 118), rgb(210, 130, 20));
+}
+.viewport::before{
+    display: block;
+    content: '';
+    padding-top: 56.25%;
+}

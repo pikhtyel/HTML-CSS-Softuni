@@ -1,0 +1,115 @@
+@import url('layout.css');
+@import url('navigation.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font: 16px/1.5;
+}
+body{
+    font-family: Helvetica, sans-serif;
+    background: rgb(238, 238, 238);
+    max-width: 80%;
+    margin: auto;
+}
+main{
+    max-width: 70%;
+}
+body, input, textarea, option, select, table, form, p{
+    font: inherit;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: Georgia, serif;
+    font-size: 1em;
+    line-height: 1.2;
+    padding-bottom: 0.5em;
+}
+p, ol, ul, blockquote{
+    padding-bottom: 1.5em;
+    box-sizing: inherit;
+}
+.container::after { 
+    content: "";
+    display: block; 
+    clear: both;
+}
+
+img.img{
+    border: 2px black solid;
+    padding: 5px;
+    background: rgb(255, 255, 255);
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.25);
+}
+blockquote{
+    float: right;
+    width: 45%;
+    padding-left: 2rem;
+    margin-left: 2em;
+    padding-bottom: 0.5em;
+    font-style: italic;
+    opacity: 0.8;
+    font-family: Georgia, serif;
+    border-left: 2px solid gray;
+}
+blockquote>p{
+    text-align: right;
+    padding-top: 1em;
+}
+img.I1{
+    float: right;
+    margin: 0 0 1em 1em;
+}
+img.I2{
+    float: left;
+    margin: 0 1em 1em 0;
+}
+h1, h2{
+    padding:0.5em 0;
+    margin-top: 15px;
+}
+aside.Aside{
+    float: right;
+    margin-top: 2em;
+}
+.Aside nav ul{
+    padding-left: 2em;
+}
+.Aside nav ul li{
+    padding-left: 0.5em;
+    line-height: 1.5;
+}
+.Aside nav ul li a{
+    color: rgb(0, 102, 0);
+    text-decoration: none;
+}
+.site-title p{
+    font-family: Helvetica, sans-serif;
+    font: 4em bold;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0;
+    padding: 1em 0 0.5em 0;
+}
+header.site-title::after{
+    content:'';
+    display: block;
+    clear: both;
+}
+.site-title nav{
+    float: right;
+    margin-top: 100px;
+}
+.site-title nav ul{
+    padding-bottom: 0;
+}
+.site-title nav ul li{
+    display: inline-block;
+    padding: 2px;
+}
+.site-title nav ul li a{
+    text-decoration: none;
+    color: rgb(0, 102, 0);
+}
