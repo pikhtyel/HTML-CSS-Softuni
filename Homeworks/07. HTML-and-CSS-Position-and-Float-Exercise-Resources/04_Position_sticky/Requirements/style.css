@@ -1,0 +1,14 @@
+main{
+    width: 90%;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.container{
+    display: block;
+}
+.stiky{
+    background: rgba(3, 3, 3, 0.5);
+    position: fixed;
+    height: 100px;
+    width: 100%;
+}

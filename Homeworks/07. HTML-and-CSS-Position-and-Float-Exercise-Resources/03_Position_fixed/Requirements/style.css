@@ -1,0 +1,26 @@
+
+.fixed{
+    margin: 0;
+    padding: 1em 0;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(178, 247, 203, 0.8);
+    font-size: 1.5rem;
+    color: white;
+    vertical-align: center;
+}
+.container{
+    display: inline-block;
+    margin-bottom: 70px;
+}
+main{
+    margin: auto;
+    width: 90%;
+} 
+p{
+    padding-top: 1em;
+    line-height: 1.5;
+}

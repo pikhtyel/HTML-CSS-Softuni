@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+}
+body{
+    font-family:  Helvetica, sans-serif;
+}
+section{
+    width: 500px;
+    height: 290px;
+    margin: auto;
+    position: relative;
+    background: linear-gradient(rgb(6, 47, 94),rgb(73, 75, 45))
+}
+img{
+    position: absolute;
+}
+img.pic{
+    width: 25%;
+    height: auto;
+    top: 25%;
+    left: 50px;
+    transform: rotate(-15deg);
+    border-radius: 1px;
+}
+img.barcode {
+    width: 70px;
+    top: 70%;
+    left: 15px;
+    z-index: 5;
+}
+div.name {
+    position: absolute;
+    top: 25%;
+    right: 9%;
+}
+.name p{
+    text-transform: capitalize;
+    color: white;
+    font: 14PX bold;
+    font-family:  Helvetica, sans-serif;
+    text-align: right;
+    padding: 0.6em 0;
+}
+.name h2{
+    font: bold;
+    color: rgb(57, 223, 57);
+    text-align: right;
+}
+nav{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    top: 75%;
+}
+ul{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: yellow;
+    padding-left:20%; 
+}
+ul li{
+    box-sizing: border-box;
+    text-align: center;
+    list-style: none;
+    width: 25%;
+    height: 100%;
+    display: inline-block;
+    font-size: 16px;
+    font-family:  Helvetica, sans-serif;
+    color: white;
+    font-weight: 600;
+    padding: 0.6em 0;
+}
+ul li:nth-child(1){
+    background: lightgreen;  
+}
+ul li:nth-child(2){
+    background: green;  
+}
+ul li:nth-child(3){
+    background: orange;  
+}
+ul li:nth-child(4){
+    background: red;  
+}
+section:before{
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    content:'';
+    top: 15px;
+    background: linear-gradient(90deg,
+yellow 20%,
+lightgreen 20%, lightgreen 40%,
+green 40%, green 60%,
+orange 60%, orange 80%,
+red 80%);
+}
+section::after{
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    content:'';
+    bottom: 0;
+    background: linear-gradient(90deg,
+yellow 20%,
+lightgreen 20%, lightgreen 40%,
+green 40%, green 60%,
+orange 60%, orange 80%,
+red 80%);
+}
+
+
+/*     background: linear-gradient(90deg,
+    yellow 20%,
+    lightgreen 20%, lightgreen 40%,
+    green 40%, green 60%,
+    orange 60%, orange 80%,
+    red 80%); */

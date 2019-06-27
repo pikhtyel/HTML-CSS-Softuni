@@ -1,0 +1,39 @@
+.container{
+    background: rgb(0, 255, 255);
+    width: 75%;
+    height: 450px;
+    margin: auto;
+    position: relative;
+}
+.container>div{
+    background-color: rgb(255, 255, 0);
+    width: 20%;
+    height: 20%;
+    position: absolute;
+}
+.container div:nth-child(2){
+    top: 0;
+    right: 0;
+}
+.container div:nth-child(3){
+    bottom: 0;
+    right: 0;
+}
+.container div:nth-child(4){
+    bottom: 0;
+    left: 0;
+}
+.container div:nth-child(5){
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container>div>div{
+    width: 30%;
+    height: 30%;
+    background: red;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

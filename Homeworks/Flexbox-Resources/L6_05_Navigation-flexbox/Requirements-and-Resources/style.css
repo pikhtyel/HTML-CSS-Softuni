@@ -1,0 +1,46 @@
+body{
+    max-width: 80%;
+    margin: auto;
+    font: 16px;
+    line-height: 1.5;
+    font-family: Helvetica, sans-serif
+}
+
+/* navigation */
+
+header{
+    display: flex;
+    flex-flow: wrap;
+    border-bottom: 2px solid black;
+}
+header>h1{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-family: Helvetica, sans-serif;
+    margin-right: auto;
+}
+ul{
+    display: flex;
+    flex-flow: wrap;
+}
+li{
+    list-style: none;
+    margin-right: 1em;
+    text-transform: capitalize;
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 153, 0);
+}
+
+
+
+/* Layout */
+
+h1{
+    line-height: 1.2;
+}
+
+main>h1{
+    text-transform: capitalize;
+}

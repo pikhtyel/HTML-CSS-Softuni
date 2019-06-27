@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: #eee;
+    display: flex;
+    flex-wrap: wrap;
+}
+header, main, aside, footer{
+    box-shadow: 0 0 1em #aaa;
+    margin: 0.5em;
+    border-radius: 0.5em;
+    padding: 1.5em;
+    background: white;
+}
+header{
+    flex: 1 1 80rem;
+    height: 100px;
+}
+main{
+    max-width: 60%;
+    min-height: 40vh;
+    flex: 1 1 30rem;
+}
+aside{
+    max-width: 40%;
+    flex: 1 1 10rem;
+}
+footer{
+    flex: 1 1 60rem;
+    height: 100px;
+}
