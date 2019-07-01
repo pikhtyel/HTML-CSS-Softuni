@@ -1,0 +1,116 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+    font: 14px;
+    line-height: 1.5;
+    font-family: Verdana, sans-serif;
+}
+body{
+    padding-top: 2rem;
+}
+form{
+    max-width: 30rem;
+    margin: auto;
+    align-items: center;
+}
+form fieldset{
+    display: block;
+    border: 2px solid #999;
+    padding: 2rem;
+    border-radius: 5px;
+}
+form fieldset p{
+    padding-bottom: 1.5rem;
+    display: flex;
+}
+form legend{
+    /* display: inline-block; */
+    font: 1.4em;
+    font-weight: bold;
+    padding: 0 0.5rem;
+    margin-left: -0.5rem;
+}
+form span{
+    display: block;
+    font-weight: bold;
+    padding-right: 1rem;
+    min-width: 10rem;
+    text-align: right;
+}
+form input{
+    display: block;
+    width: 100%;
+    outline: none;
+}
+form input[type='text'],
+form input[type='email'],
+form input[type='password']{
+    padding: 0.5rem 1rem;
+    border: 2px solid #999;
+    border-radius: 0.3em;
+}
+form input[type='text']:hover,
+form input[type='email']:hover,
+form input[type='password']:hover,
+form input[type='text']:focus,
+form input[type='email']:focus,
+form input[type='password']:focus{
+    border-color: #369;
+}
+form input[type='submit']{
+    padding: 0.5rem 1rem;
+    background: #369;
+    color: white;
+    border-radius: 0.3em;
+    border: 2px solid #369;
+    cursor: pointer;
+    margin-left: 10rem;
+}
+form input[type='submit']:hover{
+    border: 2px solid #369;
+    background: white;
+    color: #369
+}
+form input[type='submit']:focus{
+    border: 2px solid #369;
+    background: yellow;
+    color: #369
+}
+form .field-icon label{
+    order: 1;
+    max-width: auto;
+    background: #999;
+    color: white;
+    padding: 0 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form .field-icon input{
+    order: 2;
+}
+form .field-icon{
+    display: flex;
+    align-items: stretch;
+}
+form .field-icon label::before{
+    display: block;
+    content: 'A';
+}
+form .field-icon label span{display: none;}
+
+form .field-icon input{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+form .field-icon label{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+form .field-icon input:hover + label{
+    background: #369
+}
